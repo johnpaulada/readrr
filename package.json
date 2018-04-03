@@ -1,0 +1,27 @@
+{
+  "name": "@johnpaulada/readrr",
+  "version": "1.0.0",
+  "description": "A speed reading thing I built for myself.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.html && mkdir build && mv dist/ build/dist/ && mv build/dist/@johnpaulada-readrr.html build/index.html",
+    "deploy": "surge --domain https://readrr.surge.sh --project build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnpaulada/readrr.git"
+  },
+  "keywords": [
+    "readrr",
+    "speed",
+    "reading",
+    "javascript"
+  ],
+  "author": "John Paul Ada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnpaulada/readrr/issues"
+  },
+  "homepage": "https://github.com/johnpaulada/readrr#readme"
+}
