@@ -1,4 +1,4 @@
-# Readrr
+# [Readrr](https://readrr.surge.sh/)
 A speed reading thing I built for myself. You can use it too if you want.
 
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
