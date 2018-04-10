@@ -5,7 +5,7 @@ document.querySelector('.main-container__start').addEventListener('click', () =>
     const content = document.querySelector('.main-container__area').value
     stage1s.forEach(stage1 => stage1.classList.add('gone'))
     document.querySelector('.stage-2').classList.remove('gone')
-    displayWord(content.split(/\s/), 0)
+    displayWord(content.split(/\s/gi), 0)
 })
 
 function displayWord(wordlist, index) {
