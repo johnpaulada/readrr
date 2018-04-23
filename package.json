@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "parcel build index.html",
-    "deploy": "surge --domain https://readrr.surge.sh --project build && rm -rf build/"
+    "deploy": "surge --domain https://readrr.surge.sh --project dist && rm -rf dist/"
   },
   "repository": {
     "type": "git",
