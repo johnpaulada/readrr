@@ -37,12 +37,13 @@
     padding: 10px 30px;
     font-size: 24pt;
     border: none;
-    border-radius: 20%;
+    border-radius: 500px;
     background-color: #D1AD56;
     color: white;
     font-family: var(--abel-font);
     transform: translateY(-50%);
     cursor: pointer;
+    box-shadow: 0 10px 40px -10px #D1AD56
 }
 
 .main-container__display {
