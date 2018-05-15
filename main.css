@@ -5,7 +5,7 @@
 .main-container {
     width: 100vw;
     height: 100vh;
-    background-color: #222;
+    background-color: #333;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -25,7 +25,7 @@
 .main-container__area {
     width: 50vw;
     height: 50vh;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #444343;
     border: none;
     color: white;
     padding: 30px;
@@ -33,17 +33,25 @@
     font-family: var(--abel-font);
 }
 
+.main-container__area::-webkit-input-placeholder {
+    color: #757575;
+}
+
+.main-container__area::-moz-placeholder {
+    color: #757575;
+}
+
 .main-container__start {
-    padding: 10px 30px;
+    padding: 10px 50px;
     font-size: 24pt;
     border: none;
     border-radius: 500px;
-    background-color: #D1AD56;
+    background-color: #1EAE98;
     color: white;
     font-family: var(--abel-font);
     transform: translateY(-50%);
     cursor: pointer;
-    box-shadow: 0 10px 40px -10px #D1AD56
+    box-shadow: 0 10px 40px -10px #1EAE98
 }
 
 .main-container__display {
