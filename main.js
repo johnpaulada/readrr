@@ -1,31 +1,5 @@
 
-// Derived from: https://gist.github.com/joelambert/1002116#gistcomment-1953925
-const requestInterval = function (fn, delay) {
-  const requestAnimFrame = (function () {
-    return window.requestAnimationFrame || function (callback, element) {
-      window.setTimeout(callback, 1000 / 60);
-    };
-  })();
-
-  let start = new Date().getTime();
-  let handle = {};
-
-  function loop() {
-    handle.value = requestAnimFrame(loop);
-
-    let current = new Date().getTime(),
-    delta = current - start;
-    
-    if (delta >= delay) {
-      fn.call();
-      start = new Date().getTime();
-    }
-  }
-
-  handle.value = requestAnimFrame(loop);
-
-  return handle;
-};
+// Get setInterval from: https://gist.github.com/joelambert/1002116#gistcomment-1953925
 
 const stage1s = Array.from(document.querySelectorAll('.stage-1'))
 
