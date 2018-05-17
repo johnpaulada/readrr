@@ -27,7 +27,7 @@
     height: 50vh;
     background-color: #444343;
     border: none;
-    color: white;
+    color: #FAFAFA;
     padding: 30px;
     font-size: 32pt;
     font-family: var(--abel-font);
@@ -48,7 +48,7 @@
     border: none;
     border-radius: 500px;
     background-color: #1EAE98;
-    color: white;
+    color: #fafafa;
     font-family: var(--abel-font);
     transform: translateY(-50%);
     cursor: pointer;
@@ -64,4 +64,27 @@
 
 .gone {
     display: none;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 20vw;
+    min-width: 100px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sidebar__title {
+    color: #FAFAFA;
+    font-family: var(--abel-font);
+    font-size: 24pt;
+}
+
+.sidebar__button.selected {
+    box-shadow: 0 0 60px -10px orange;
 }

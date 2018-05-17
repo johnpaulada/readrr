@@ -1,6 +1,14 @@
 
 // Get setInterval from: https://gist.github.com/joelambert/1002116#gistcomment-1953925
 
+const paces = {
+    'lol': 500,
+    'pls': 200,
+    'triggered': 100
+}
+
+let currentPace = 'lol'
+
 const stage1s = Array.from(document.querySelectorAll('.stage-1'))
 
 document.querySelector('.main-container__start').addEventListener('click', () => {
@@ -19,5 +27,16 @@ function displayWord(wordlist, index) {
             stage1s.forEach(stage1 => stage1.classList.remove('gone'))
             document.querySelector('.stage-2').classList.add('gone')
         }
-    }, 200)
+    }, paces[currentPace])
 }
+
+[...document.querySelectorAll('.sidebar__button')].forEach(button => {
+    button.addEventListener('click', () => {
+        [...document.querySelectorAll('.sidebar__button')].forEach(others => {
+            others.classList.remove('selected')
+        })
+
+        button.classList.add('selected')
+        currentPace = button.id
+    })
+})
