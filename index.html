@@ -30,24 +30,20 @@
 </head>
 <body>
     <div class="main-container">
-        <h2 class="main-container__header stage-1">
-            <img src="./title.svg" width="300" />
-        </h2>
-        <textarea class="main-container__area stage-1" placeholder="Write your sh*t here..."></textarea>
-        <button class="main-container__start stage-1">Start</button>
+        <div class="main stage-1">
+            <h2 class="main-container__header ">
+                <img src="./title.svg" width="300" />
+            </h2>
+            <textarea class="main-container__area" placeholder="Write your sh*t here..."></textarea>
+            <button class="main-container__start">Start</button>
+        </div>
         <p class="main-container__display stage-2 gone"></p>
-    </div>
-    <div class="sidebar">
-        <h3 class="sidebar__title">Choose your pace!</h3>
-        <a href="#" class="sidebar__button selected" id="lol">
-            <img src="lol.svg" width="100" />
-        </a>
-        <a href="#" class="sidebar__button" id="pls">
-            <img src="pls.svg" width="150" />
-        </a>
-        <a href="#" class="sidebar__button" id="triggered">
-            <img src="triggered.svg" width="200" />
-        </a>
+        <div class="sidebar">
+            <h3 class="sidebar__title">Choose your pace!</h3>
+            <img class="sidebar__button selected" src="lol.svg" width="110" id="lol" />
+            <img class="sidebar__button selected" src="pls.svg" width="110" id="pls" />
+            <img class="sidebar__button selected" src="triggered.svg" width="116" id="triggered" />
+        </div>
     </div>
     <script src="main.js"></script>
 </body>

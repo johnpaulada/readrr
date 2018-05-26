@@ -1,6 +1,3 @@
-
-// Get setInterval from: https://gist.github.com/joelambert/1002116#gistcomment-1953925
-
 const paces = {
     'lol': 500,
     'pls': 200,
